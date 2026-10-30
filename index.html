@@ -1,0 +1,108 @@
+DOCTYPE html>
+<html >
+<head>
+    <!
+    <title>My Portfolio Project</title>
+</head>
+<body>
+
+    <!-- 2. Build the Structure & 3. Navigation Bar -->
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <nav>
+            <!-- Standard school approach for navigation links -->
+            <a href="#about">About</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- 4. Hero & About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! My name is simran and I am currently a student working on my web development skills Also I hope to learn smething nice and enjoyable .</p>
+            <!-- Image points to the required images folder -->
+            <img src="simran profile.jfif" alt="Profile Picture" >
+            <p>I enjoy learning how technology works behind the scenes. This site is built completely from scratch using clean HTML to practice layout structure before we start adding CSS styles.</p>
+        </section>
+
+        <!-- 5. Projects Section -->
+        <section id="projects">
+            <h2>Sample Projects</h2>
+            
+            <h3>1. Personal Portfolio Website</h3>
+            <p>A simple, clean single-page site built with semantic HTML tags to introduce myself.</p>
+            
+            <h3>2. Recipe Website Layout</h3>
+            <p>An assignment where I organized food recipes using headers, lists, and images.</p>
+            
+            <h3>3. Product Landing Page</h3>
+            <p>A practice mock-up layout featuring basic columns, textual information, and a sign-up link.</p>
+        </section>
+
+        <!-- 6. Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <!-- Standard homework table attributes for visible grading layout -->
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Skill Name</th>
+                        <th>My Current Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate / Competent</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner / Basic</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner / Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <!-- Form using standard linebreaks, typical for raw student HTML submissions -->
+            <form action="#" method="POST">
+                <p>
+                    <label for="userName">Name:</label><br>
+                    <input type="text" id="userName" name="userName" placeholder="Your name here" required>
+                </p>
+                
+                <p>
+                    <label for="userEmail">Email:</label><br>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="name@example.com" required>
+                </p>
+                
+                <p>
+                    <label for="userMsg">Message:</label><br>
+                    <textarea id="userMsg" name="userMsg" rows="4" cols="40" placeholder="Type your message here..." required></textarea>
+                </p>
+                
+                <p>
+                    <input type="submit" value="Submit Form">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 2. Footer Structure -->
+    <footer>
+        <p>Created by: simran - Student Assignment 2026</p>
+    </footer>
+
+</body>
+</html>
