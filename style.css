@@ -1,0 +1,249 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f1fa;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #30264d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5c6e7;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.section-box {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(48, 38, 77, 0.08);
+}
+
+h2 {
+    color: #60458a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d9c6ed;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Profile Picture */
+.profile-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #d9c6ed;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1 1 250px;
+    background-color: #f4f1fa;
+    padding: 20px;
+    border-left: 4px solid #8064aa;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(48, 38, 77, 0.12);
+}
+
+.project-card h3 {
+    color: #60458a;
+    margin-bottom: 10px;
+}
+
+/* Horizontal Line */
+hr {
+    border: none;
+    border-top: 2px solid #d9c6ed;
+    margin: 25px 0;
+}
+
+/* Skills Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #c8b8dc;
+    padding: 14px;
+}
+
+th {
+    background-color: #60458a;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee8f6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #60458a;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c8b8dc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #8064aa;
+    border-color: #8064aa;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    background-color: #60458a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #30264d;
+}
+
+/* Footer */
+footer {
+    background-color: #30264d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #60458a;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #30264d;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .section-box {
+        padding: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
